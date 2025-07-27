@@ -1,0 +1,22 @@
+# part 3
+
+1. What are the assumptions of linear regression? 
+- The relationship between features and target should be linear.
+- Errors (differences between predicted and actual) should have constant spread.
+- Data points should be independent (not related to each other).
+- Errors should follow a normal distribution.
+
+2. When should you use logistic regression instead of linear regression? 
+- Use logistic regression when the target is Yes/No, 0/1, or any category.
+- Use linear regression only when predicting a number (like price, age, etc.).
+
+3. What is the interpretation of coefficients in logistic regression?
+- The coefficient shows how much the odds change when a feature increases.
+- If you increase a feature by 1, the chance of outcome (like getting 1) goes up or down.
+
+4. What is the difference between sigmoid and softmax functions? 
+- Sigmoid: Used for two-class problems (gives one value between 0 and 1).
+- Softmax: Used for multi-class problems (gives a set of probabilities that add to 1)
+
+5. Why is R-squared not suitable for evaluating logistic regression models?
+- R-squared measures the proportion of variance explained by a linear model and is suited for regression tasks. Logistic regression deals with classification and probabilities, not continuous values so metrics like accuracy, precision,recall,F1-score, and ROC-AUC are more appropriate for evaluating its performance.
