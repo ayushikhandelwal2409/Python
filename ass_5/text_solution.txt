@@ -1,0 +1,41 @@
+part 1
+
+task 1
+Answer in 2–4 sentences: 
+
+1. What is the core assumption of Naive Bayes? 
+ans:The core assumption of Naive Bayes is that all features are conditionally independent of each other given the class label.
+
+2. Differentiate between GaussianNB, MultinomialNB, and BernoulliNB. 
+ans:GaussianNB assumes features follow a normal distribution (used for continuous data).
+MultinomialNB is designed for count-based features like word frequencies.
+BernoulliNB works with binary or boolean features indicating presence or absence.
+
+3. Why is Naive Bayes considered suitable for high-dimensional data? 
+ans:Naive Bayes is suitable for high-dimensional data because it simplifies computations using the independence assumption, requires fewer parameters, and avoids overfitting even with a large number of features.
+
+part 2
+
+Task 4: Conceptual Questions 
+Answer briefly: 
+1. What is entropy and information gain? 
+ans:Entropy measures the impurity or uncertainty in a dataset, while Information Gain quantifies the reduction in entropy achieved by splitting the dataset on a particular feature.
+
+2. Explain the difference between Gini Index and Entropy. 
+ans:The Gini Index measures the probability of incorrectly classifying a randomly chosen element, while Entropy measures the level of disorder; Gini is faster to compute, whereas Entropy uses logarithmic calculations and can be more sensitive to changes in class distribution.
+
+3. How can a decision tree overfit? How can this be avoided?
+ans:A decision tree can overfit by growing too deep and capturing noise in the training data. This can be avoided by pruning, setting maximum depth or minimum samples per split, and using ensemble methods like Random Forest.
+
+part 3
+
+Task 7: Conceptual Questions 
+Answer: 
+1. What is the difference between Bagging and Boosting? 
+ans:Bagging builds multiple independent models on different random subsets of data and averages their predictions to reduce variance, while Boosting builds models sequentially, where each model focuses on correcting the errors of the previous one to reduce bias.
+
+2. How does Random Forest reduce variance? 
+ans:Random Forest reduces variance by training multiple decision trees on bootstrapped samples and averaging their predictions, which stabilizes the overall output and prevents overfitting.
+
+3. What is the weakness of boosting-based methods? 
+ans:Boosting methods can overfit if there is noise in the data and usually take more time to train because they build models step by step.
